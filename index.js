@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const request = require('request')
 const bodyParser = require('body-parser');
+require('dotenv').config()
 
 const port = process.env.PORT || 9000  // port is set by env variable or default to 9000
 const Token = process.env.TOKEN
